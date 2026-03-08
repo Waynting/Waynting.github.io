@@ -5,7 +5,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 const skills = {
   Stack: ["TypeScript", "React", "Next.js", "PostgreSQL", "Tailwind", "Python", "C++"],
-  Tools: ["REST/GraphQL", "Git", "Vercel"],
+  Tools: ["REST/GraphQL", "Git", "Vercel", "SDD", "Agile"],
   Coursework: ["Data Structures", "Web Programming", "Algorithms", "Operating Systems"],
 };
 
@@ -98,13 +98,11 @@ export default function Home() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src="/LIU_0457_optimized.jpg"
+                src="/160041.jpg"
                 alt="Portrait of Wei-Ting Liu"
-                width={72}
-                height={72}
-                className="rounded-full"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASABIDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBBAf/xAAgEAACAQQBBQAAAAAAAAAAAAABAgMABBEhEgUGIjFB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwQF/8QAGhEAAgMBAQAAAAAAAAAAAAAAAAECEQMEMf/aAAwDAQACEQMRAD8A0G5vYrW2DSyqGRgQoPPR9VavJ7WV2h4vykBBJGBVP9p1m3T+cZUOT+rXSZiCjsjKVyCAxHurKkzbSMvvOjGOKGdUEoZQSoOTvWc1ctbrtrp6pHJcM7Iq/h2cAb9UUU8eTbJ8o7P/2Q=="
+                width={120}
+                height={120}
+                className="rounded-xl object-cover"
                 priority
               />
             </div>
@@ -141,14 +139,14 @@ export default function Home() {
               </div>
               <ul className="space-y-1 text-sm text-muted-foreground">
                 <li className="pl-3 border-l border-border">Building internal ops dashboard (Next.js + TypeScript) centralizing billing, experiment lifecycle, and revenue monitoring across all merchant stores.</li>
-                <li className="pl-3 border-l border-border">Use SDD to develop new features and improve existing ones.</li>
+                <li className="pl-3 border-l border-border">Use SDD and Agile methodology to develop new features and improve existing ones.</li>
               </ul>
             </div>
 
             <div className="group px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
               <div className="flex items-start justify-between gap-4 mb-2">
                 <div>
-                  <p className="text-sm font-medium">ABConvert — Startup Generalist Intern (Product/AI)</p>
+                  <p className="text-sm font-medium">ABConvert — Startup Generalist Summer Intern (Product/AI)</p>
                   <p className="text-xs text-muted-foreground mt-0.5">Shopify A/B Testing SaaS</p>
                 </div>
                 <span className="text-xs text-muted-foreground whitespace-nowrap">2025.07 – 2025.09</span>
@@ -194,33 +192,24 @@ export default function Home() {
           <div className="space-y-2">
             <div className="px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
               <div className="flex items-start justify-between gap-4 mb-2">
+                <p className="text-sm font-medium">Spotify GuessSong</p>
+                <div className="flex gap-3 text-xs text-muted-foreground whitespace-nowrap">
+                  <a href="https://github.com/Waynting/spotify-guess-song" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub →</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Live →</a>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground">Next.js 15, TypeScript, React, Tailwind CSS, Spotify Web API, shadcn/ui. Built a real-time multiplayer music guessing game where the host pastes any Spotify playlist URL; the app fetches tracks via Spotify Client Credentials and runs a round-by-round quiz with audio clips, live scoring, and answer validation.</p>
+            </div>
+
+            <div className="px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
+              <div className="flex items-start justify-between gap-4 mb-2">
                 <p className="text-sm font-medium">Spotify Statistic</p>
                 <div className="flex gap-3 text-xs text-muted-foreground whitespace-nowrap">
                   <a href="https://github.com/Waynting/spotify-statistic" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub →</a>
                   <a href="https://spotify-statistic.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Live →</a>
                 </div>
               </div>
-              <p className="text-xs text-muted-foreground mb-2">Spotify analytics dashboard</p>
-              <ul className="space-y-1 text-sm text-muted-foreground">
-                <li className="pl-3 border-l border-border">Next.js 14 + TypeScript + PostgreSQL</li>
-                <li className="pl-3 border-l border-border">OAuth 2.0 (PKCE), cron-based history sync</li>
-                <li className="pl-3 border-l border-border">Multi-dimensional breakdowns by artist, genre, and time period</li>
-              </ul>
-            </div>
-
-            <div className="px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
-              <div className="flex items-start justify-between gap-4 mb-2">
-                <p className="text-sm font-medium">Price Test Tool</p>
-                <div className="flex gap-3 text-xs text-muted-foreground whitespace-nowrap">
-                  <a href="https://github.com/wen5928/price_test_smalltool" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub →</a>
-                </div>
-              </div>
-              <p className="text-xs text-muted-foreground mb-2">Pricing simulator for e-commerce</p>
-              <ul className="space-y-1 text-sm text-muted-foreground">
-                <li className="pl-3 border-l border-border">Next.js + TypeScript</li>
-                <li className="pl-3 border-l border-border">CSV upload, COGS model, OEC optimization</li>
-                <li className="pl-3 border-l border-border">Conversion/revenue impact simulation</li>
-              </ul>
+              <p className="text-sm text-muted-foreground">Next.js 14 + TypeScript + PostgreSQL. Spotify analytics: OAuth 2.0 (PKCE), cron-based history sync, multi-dimensional breakdowns (artist/genre/time-period).</p>
             </div>
           </div>
         </section>
