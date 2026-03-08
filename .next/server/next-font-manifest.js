@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/waynliu/Documents/CV & Resume/One-Pager Web/portfolio-site/app/layout":["static/media/604a121a6fa1a135-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
