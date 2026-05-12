@@ -194,8 +194,8 @@ export default function Home() {
               <div className="flex items-start justify-between gap-4 mb-2">
                 <p className="text-sm font-medium">Spotify GuessSong</p>
                 <div className="flex gap-3 text-xs text-muted-foreground whitespace-nowrap">
-                  <a href="https://github.com/Waynting/spotify-guess-song" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub →</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Live →</a>
+                  <a href="https://github.com/Waynting/spotify-song-guess_web" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub →</a>
+                  <a href="https://spotify-song-guess-web.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Live →</a>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground">Next.js 15, TypeScript, React, Tailwind CSS, Spotify Web API, shadcn/ui. Built a real-time multiplayer music guessing game where the host pastes any Spotify playlist URL; the app fetches tracks via Spotify Client Credentials and runs a round-by-round quiz with audio clips, live scoring, and answer validation.</p>
@@ -205,8 +205,8 @@ export default function Home() {
               <div className="flex items-start justify-between gap-4 mb-2">
                 <p className="text-sm font-medium">Spotify Statistic</p>
                 <div className="flex gap-3 text-xs text-muted-foreground whitespace-nowrap">
-                  <a href="https://github.com/Waynting/spotify-statistic" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub →</a>
-                  <a href="https://spotify-statistic.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Live →</a>
+                  <a href="https://github.com/Waynting/Spotify_Statistic" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub →</a>
+                  <a href="https://spotify-statistic-ntu.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Live →</a>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground">Next.js 14 + TypeScript + PostgreSQL. Spotify analytics: OAuth 2.0 (PKCE), cron-based history sync, multi-dimensional breakdowns (artist/genre/time-period).</p>
