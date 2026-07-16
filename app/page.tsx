@@ -132,14 +132,28 @@ export default function Home() {
             <div className="group px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
               <div className="flex items-start justify-between gap-4 mb-2">
                 <div>
+                  <p className="text-sm font-medium">ABConvert — Reinforcement Learning R&D Intern</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">Shopify A/B Testing SaaS</p>
+                </div>
+                <span className="text-xs text-muted-foreground whitespace-nowrap">2026.07 – Present</span>
+              </div>
+              <ul className="space-y-1 text-sm text-muted-foreground">
+                <li className="pl-3 border-l border-border">Formulated a dual-loop RL system (MDP: state/action/reward/policy) that trains agents to optimize Shopify stores inside a traffic simulator calibrated on historical A/B-test data, closing the sim-to-real gap.</li>
+                <li className="pl-3 border-l border-border">Built a Python POC (outer calibration loop grounded in a causal surrogacy framework + inner-loop ε-greedy contextual bandit, with Streamlit dashboard and pytest suite) and authored the technical proposal (MDP spec, competitive analysis vs. 4 tools, 16-week roadmap, kill criteria).</li>
+              </ul>
+            </div>
+
+            <div className="group px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
+              <div className="flex items-start justify-between gap-4 mb-2">
+                <div>
                   <p className="text-sm font-medium">ABConvert — Software Engineer Intern</p>
                   <p className="text-xs text-muted-foreground mt-0.5">Shopify A/B Testing SaaS</p>
                 </div>
-                <span className="text-xs text-muted-foreground whitespace-nowrap">2026.02 – Present</span>
+                <span className="text-xs text-muted-foreground whitespace-nowrap">2026.02 – 2026.06</span>
               </div>
               <ul className="space-y-1 text-sm text-muted-foreground">
-                <li className="pl-3 border-l border-border">Building internal ops dashboard (Next.js + TypeScript) centralizing billing, experiment lifecycle, and revenue monitoring across all merchant stores.</li>
-                <li className="pl-3 border-l border-border">Use SDD and Agile methodology to develop new features and improve existing ones.</li>
+                <li className="pl-3 border-l border-border">Migrated abconvert.io (10 pages) from Webflow to a self-hosted Next.js app, reaching a 97 Lighthouse SEO score and enabling custom interactive components.</li>
+                <li className="pl-3 border-l border-border">Built internal dashboard features (experiment research, visualization, analysis) from a cross-team needs survey, eliminating ~70% of manual metric lookups for Customer Success and the CEO.</li>
               </ul>
             </div>
 
@@ -283,11 +297,11 @@ export default function Home() {
           url: "https://waynspace.com",
           image: "https://waynspace.com/LIU_0457_optimized.jpg",
           email: "wayntingliu@gmail.com",
-          jobTitle: "Software Engineer Intern",
+          jobTitle: "Reinforcement Learning R&D Intern",
           alumniOf: { "@type": "CollegeOrUniversity", name: "National Taiwan University", department: "Information Management" },
           sameAs: ["https://github.com/Waynting", "https://www.linkedin.com/in/waiting5928/", "https://www.instagram.com/waiting_941208/"],
           knowsLanguage: ["en", "zh-Hant-TW"],
-          knowsAbout: ["A/B testing", "Next.js", "TypeScript", "PostgreSQL", "Pricing", "CUPED", "Full-stack Development"],
+          knowsAbout: ["Reinforcement Learning", "A/B testing", "Next.js", "TypeScript", "PostgreSQL", "Python", "CUPED", "Full-stack Development"],
         })
       }} />
     </>
