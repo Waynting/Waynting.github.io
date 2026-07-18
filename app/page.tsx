@@ -4,8 +4,8 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 
 const skills = {
-  Stack: ["TypeScript", "React", "Next.js", "PostgreSQL", "Tailwind", "Python", "C++"],
-  Tools: ["REST/GraphQL", "Git", "Vercel", "SDD", "Agile"],
+  Stack: ["TypeScript", "React", "Next.js", "PostgreSQL", "Tailwind", "Python", "PyTorch", "C++"],
+  Tools: ["REST/GraphQL", "Git", "Service Design", "Design Thinking"],
   Coursework: ["Data Structures", "Web Programming", "Algorithms", "Operating Systems"],
 };
 
@@ -39,6 +39,7 @@ export default function Home() {
             {[
               ["About", "#about"],
               ["Experience", "#experience"],
+              ["Research", "#research"],
               ["Education", "#education"],
               ["Skills", "#skills"],
               ["Projects", "#projects"],
@@ -114,13 +115,17 @@ export default function Home() {
           <SectionHeader number="00" title="Summary" />
           <div className="space-y-3 text-sm leading-relaxed">
             <p>
-              Full-stack engineer with an AI-native mindset, building data-driven products in Next.js + TypeScript.
-              Experienced in end-to-end delivery — from OAuth/PostgreSQL back-ends to streaming RSC front-ends —
-              with a strong foundation in A/B experimentation and measurable outcomes.
+              Full-stack engineer moving into reinforcement learning R&D, currently designing a dual-loop RL
+              system at ABConvert that trains agents to optimize Shopify stores while closing the sim-to-real gap.
+              In parallel, researching multi-agent RL for decentralized epidemic surveillance, benchmarking MARL
+              against supervised baselines across 26 simulated regions.
             </p>
             <p>
-              Thrive in fast-paced, agile environments. B.B.A. student in Information Management and the
-              Trans-disciplinary Program (College of Innovation) at NTU.
+              Grounded in shipped product work: migrated a 10-page marketing site to Next.js at a 97 Lighthouse
+              SEO score, built internal analytics dashboards that cut manual metric lookups by ~70%, and led AI
+              adoption workshops that moved 80% of a research center&apos;s staff from chat-based AI use to building
+              their own tools. B.B.A. student in Information Management and the Trans-disciplinary Program
+              (College of Innovation) at NTU.
             </p>
           </div>
         </section>
@@ -138,8 +143,19 @@ export default function Home() {
                 <span className="text-xs text-muted-foreground whitespace-nowrap">2026.07 – Present</span>
               </div>
               <ul className="space-y-1 text-sm text-muted-foreground">
-                <li className="pl-3 border-l border-border">Formulated a dual-loop RL system (MDP: state/action/reward/policy) that trains agents to optimize Shopify stores inside a traffic simulator calibrated on historical A/B-test data, closing the sim-to-real gap.</li>
-                <li className="pl-3 border-l border-border">Built a Python POC (outer calibration loop grounded in a causal surrogacy framework + inner-loop ε-greedy contextual bandit, with Streamlit dashboard and pytest suite) and authored the technical proposal (MDP spec, competitive analysis vs. 4 tools, 16-week roadmap, kill criteria).</li>
+                <li className="pl-3 border-l border-border">Designed a dual-loop RL system that trains agents to optimize Shopify stores, aiming to build an accurate, real-world-calibrated simulator that closes the sim-to-real gap.</li>
+              </ul>
+            </div>
+
+            <div className="group px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
+              <div className="flex items-start justify-between gap-4 mb-2">
+                <div>
+                  <p className="text-sm font-medium">NTU Insight Center — AI Intern</p>
+                </div>
+                <span className="text-xs text-muted-foreground whitespace-nowrap">2026.02 – 2026.07</span>
+              </div>
+              <ul className="space-y-1 text-sm text-muted-foreground">
+                <li className="pl-3 border-l border-border">Developed an internal service-design product and led AI adoption workshops, moving 80% of staff from chat-based AI use to building their own website products.</li>
               </ul>
             </div>
 
@@ -167,29 +183,51 @@ export default function Home() {
               </div>
               <ul className="space-y-1 text-sm text-muted-foreground">
                 <li className="pl-3 border-l border-border">AI-native generalist: LLM-assisted workflow to compress spec → implementation loop; shipped Next.js + TypeScript frontend (SSR/ISR, streaming UI) at startup pace.</li>
-                <li className="pl-3 border-l border-border">Iterated on experimentation UI (A/B instrumentation, sequential monitoring, CUPED) via agile cycles, validating each increment with live data.</li>
               </ul>
             </div>
           </div>
         </section>
 
-        {/* 02 · EDUCATION */}
+        {/* 02 · RESEARCH */}
+        <section id="research" className="mb-12 scroll-mt-20">
+          <SectionHeader number="02" title="Research Experience" />
+          <div className="group px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
+            <div className="flex items-start justify-between gap-4 mb-2">
+              <div>
+                <p className="text-sm font-medium">Multi-Agent RL for Decentralized Epidemic Surveillance</p>
+                <p className="text-xs text-muted-foreground mt-0.5">
+                  Advised by{" "}
+                  <a href="https://sites.google.com/view/hsuanweilee/home" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-2">
+                    Wayne Lee
+                  </a>
+                </p>
+              </div>
+              <span className="text-xs text-muted-foreground whitespace-nowrap">2026.02 – Present</span>
+            </div>
+            <ul className="space-y-1 text-sm text-muted-foreground">
+              <li className="pl-3 border-l border-border">Built a CTDE multi-agent RL framework (MAPPO/QMIX) modeling Brazil&apos;s 26 states as agents alerting on dengue from case counts and Google Trends, benchmarked against an information-parity baseline and a supervised oracle.</li>
+              <li className="pl-3 border-l border-border">Found MARL systematically underperforms the baseline across algorithm, reward, cost, and environment variations; ruled out five candidate explanations, isolating the bottleneck to RL sample efficiency rather than the surveillance signal. Manuscript in preparation, targeting Oct 2026.</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* 03 · EDUCATION */}
         <section id="education" className="mb-12 scroll-mt-20">
-          <SectionHeader number="02" title="Education" />
+          <SectionHeader number="03" title="Education" />
           <div className="group px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-sm font-medium">National Taiwan University</p>
-                <p className="text-xs text-muted-foreground mt-0.5">B.B.A. in Information Management · Double Major: Trans-disciplinary Program (College of Innovation)</p>
+                <p className="text-xs text-muted-foreground mt-0.5">B.B.A. in Information Management · Double Major: Trans-disciplinary Program (College of Innovation) · Leadership Program</p>
               </div>
-              <span className="text-xs text-muted-foreground whitespace-nowrap">2024–2028</span>
+              <span className="text-xs text-muted-foreground whitespace-nowrap">2024 – Present</span>
             </div>
           </div>
         </section>
 
-        {/* 03 · SKILLS */}
+        {/* 04 · SKILLS */}
         <section id="skills" className="mb-12 scroll-mt-20">
-          <SectionHeader number="03" title="Skills" />
+          <SectionHeader number="04" title="Skills" />
           <div className="space-y-4">
             {Object.entries(skills).map(([category, list]) => (
               <div key={category} className="grid grid-cols-[120px_1fr] gap-4 text-sm px-4 py-3 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
@@ -200,9 +238,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 04 · PROJECTS */}
+        {/* 05 · PROJECTS */}
         <section id="projects" className="mb-12 scroll-mt-20">
-          <SectionHeader number="04" title="Projects" />
+          <SectionHeader number="05" title="Projects" />
           <div className="space-y-2">
             <div className="px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
               <div className="flex items-start justify-between gap-4 mb-2">
@@ -212,40 +250,43 @@ export default function Home() {
                   <a href="https://spotify-song-guess-web.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Live →</a>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground">Next.js 15, TypeScript, React, Tailwind CSS, Spotify Web API, shadcn/ui. Built a real-time multiplayer music guessing game where the host pastes any Spotify playlist URL; the app fetches tracks via Spotify Client Credentials and runs a round-by-round quiz with audio clips, live scoring, and answer validation.</p>
+              <p className="text-sm text-muted-foreground">Next.js 15, TypeScript, React, Tailwind CSS, Spotify Web API, shadcn/ui. Real-time multiplayer music guessing game with 1,300+ active users; host pastes any Spotify playlist URL and the app fetches tracks via Spotify Client Credentials, running a round-by-round quiz with audio clips, live scoring, and answer validation.</p>
             </div>
 
             <div className="px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
               <div className="flex items-start justify-between gap-4 mb-2">
-                <p className="text-sm font-medium">Spotify Statistic</p>
+                <p className="text-sm font-medium">ABConvert.io Website Migration</p>
                 <div className="flex gap-3 text-xs text-muted-foreground whitespace-nowrap">
-                  <a href="https://github.com/Waynting/Spotify_Statistic" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub →</a>
-                  <a href="https://spotify-statistic-ntu.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Live →</a>
+                  <a href="https://www.abconvert.io/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Live →</a>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground">Next.js 14 + TypeScript + PostgreSQL. Spotify analytics: OAuth 2.0 (PKCE), cron-based history sync, multi-dimensional breakdowns (artist/genre/time-period).</p>
+              <p className="text-sm text-muted-foreground">Next.js, TypeScript. Migrated abconvert.io (10 pages) from Webflow to a self-hosted Next.js app, reaching a 97 Lighthouse SEO score and enabling custom interactive components.</p>
             </div>
           </div>
         </section>
 
-        {/* 05 · AWARDS & LEADERSHIP */}
+        {/* 06 · AWARDS & LEADERSHIP */}
         <section id="awards" className="mb-12 scroll-mt-20">
-          <SectionHeader number="05" title="Awards & Leadership" />
+          <SectionHeader number="06" title="Awards & Leadership" />
           <div className="space-y-2">
             <div className="grid grid-cols-[120px_1fr] gap-4 text-sm px-4 py-3 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
-              <span className="text-muted-foreground whitespace-nowrap">2024 – Present</span>
-              <span>Camera Drift (NTU) — Organizer / Photographer. Cross-campus photo program.</span>
+              <span className="text-muted-foreground whitespace-nowrap">2026.07 – 2027.06</span>
+              <span>NTU Information Management Student Association — Vice President.</span>
             </div>
             <div className="grid grid-cols-[120px_1fr] gap-4 text-sm px-4 py-3 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
               <span className="text-muted-foreground whitespace-nowrap">2025</span>
               <span>PDAO Competition — 5th overall, 1st in IM Department.</span>
             </div>
+            <div className="grid grid-cols-[120px_1fr] gap-4 text-sm px-4 py-3 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
+              <span className="text-muted-foreground whitespace-nowrap">2024 – Present</span>
+              <span>Camera Drift (NTU) — Organizer / Photographer. Cross-campus photo program.</span>
+            </div>
           </div>
         </section>
 
-        {/* 06 · CONTACT */}
+        {/* 07 · CONTACT */}
         <section id="contact" className="mb-16 scroll-mt-20">
-          <SectionHeader number="06" title="Contact" />
+          <SectionHeader number="07" title="Contact" />
           <div className="space-y-2 text-sm">
             <div className="grid grid-cols-[120px_1fr] gap-4 px-4 py-2 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
               <span className="text-muted-foreground">Email</span>
