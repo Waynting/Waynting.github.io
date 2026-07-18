@@ -336,7 +336,7 @@ export default function Home() {
           name: "Wei-Ting Liu",
           alternateName: "劉威廷",
           url: "https://waynspace.com",
-          image: "https://waynspace.com/LIU_0457_optimized.jpg",
+          image: "https://waynspace.com/160041.jpg",
           email: "wayntingliu@gmail.com",
           jobTitle: "Reinforcement Learning R&D Intern",
           alumniOf: { "@type": "CollegeOrUniversity", name: "National Taiwan University", department: "Information Management" },

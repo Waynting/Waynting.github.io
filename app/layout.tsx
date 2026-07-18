@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://waynspace.com/LIU_0457_optimized.jpg",
-        width: 1200,
-        height: 630,
+        url: "https://waynspace.com/160041.jpg",
+        width: 428,
+        height: 592,
         alt: "Wei-Ting Liu",
       },
     ],
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wei-Ting Liu — Waynspace",
     description: "Portfolio of Wei-Ting Liu, Information Management student at National Taiwan University",
-    images: ["https://waynspace.com/LIU_0457_optimized.jpg"],
+    images: ["https://waynspace.com/160041.jpg"],
   },
   robots: {
     index: true,
