@@ -250,7 +250,7 @@ export default function Home() {
                   <a href="https://www.guessong.app/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Live →</a>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground">Next.js 15, TypeScript, React, Tailwind CSS, Spotify Web API, shadcn/ui. Real-time multiplayer music guessing game with 60,000+ monthly active users; host pastes any Spotify playlist URL and the app fetches tracks via Spotify Client Credentials, running a round-by-round quiz with audio clips, live scoring, and answer validation.</p>
+              <p className="text-sm text-muted-foreground">Next.js 15, TypeScript, React, Tailwind CSS, Spotify Web API, shadcn/ui. Real-time multiplayer music guessing game with 70,000+ monthly active users; host pastes any Spotify playlist URL and the app fetches tracks via Spotify Client Credentials, running a round-by-round quiz with audio clips, live scoring, and answer validation.</p>
             </div>
 
             <div className="px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
