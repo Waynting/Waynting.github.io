@@ -117,8 +117,9 @@ export default function Home() {
             <p>
               Full-stack engineer moving into reinforcement learning R&D, currently designing a dual-loop RL
               system at ABConvert that trains agents to optimize Shopify stores while closing the sim-to-real gap.
-              In parallel, researching multi-agent RL for decentralized epidemic surveillance, benchmarking MARL
-              against supervised baselines across 26 simulated regions.
+              In parallel, running two computational-epidemiology studies: a multi-agent RL benchmark for
+              decentralized dengue alerting across Brazil&apos;s 26 states, and a 10.2-billion-row measurement of
+              age-mixing structure in Seoul&apos;s mobility data. Both released as citable replication archives.
             </p>
             <p>
               Grounded in shipped product work: migrated a 10-page marketing site to Next.js at a 97 Lighthouse
@@ -191,23 +192,47 @@ export default function Home() {
         {/* 02 · RESEARCH */}
         <section id="research" className="mb-12 scroll-mt-20">
           <SectionHeader number="02" title="Research Experience" />
-          <div className="group px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
-            <div className="flex items-start justify-between gap-4 mb-2">
-              <div>
-                <p className="text-sm font-medium">Multi-Agent RL for Decentralized Epidemic Surveillance</p>
-                <p className="text-xs text-muted-foreground mt-0.5">
-                  Advised by{" "}
-                  <a href="https://sites.google.com/view/hsuanweilee/home" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-2">
-                    Wayne Lee
-                  </a>
-                </p>
+          <div className="space-y-2">
+            <div className="group px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
+              <div className="flex items-start justify-between gap-4 mb-2">
+                <div>
+                  <p className="text-sm font-medium">Multi-Agent RL for Decentralized Epidemic Surveillance</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    Advised by{" "}
+                    <a href="https://sites.google.com/view/hsuanweilee/home" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-2">
+                      Wayne Lee
+                    </a>
+                    {" · "}
+                    <a href="https://doi.org/10.5281/zenodo.21619163" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-2">
+                      10.5281/zenodo.21619163
+                    </a>
+                  </p>
+                </div>
+                <span className="text-xs text-muted-foreground whitespace-nowrap">2026.02 &ndash; Present</span>
               </div>
-              <span className="text-xs text-muted-foreground whitespace-nowrap">2026.02 – Present</span>
+              <ul className="space-y-1 text-sm text-muted-foreground">
+                <li className="pl-3 border-l border-border">Built a CTDE multi-agent RL framework (MAPPO/QMIX/IPPO/CQL on PettingZoo) modeling Brazil&apos;s 26 states as agents alerting on dengue from 258 weeks of case counts and Google Trends, benchmarked against an information-parity threshold rule.</li>
+                <li className="pl-3 border-l border-border">Showed the agents lose systematically on historical replay and decomposed the gap into reward misalignment (partly recovered by a gated false-alarm penalty) and residual on-policy sample inefficiency; the same agents do learn control on action-coupled SIR/SIS environments, localizing the failure to task specification rather than to RL. Released a 107-checkpoint replication archive; manuscript in preparation.</li>
+              </ul>
             </div>
-            <ul className="space-y-1 text-sm text-muted-foreground">
-              <li className="pl-3 border-l border-border">Built a CTDE multi-agent RL framework (MAPPO/QMIX) modeling Brazil&apos;s 26 states as agents alerting on dengue from case counts and Google Trends, benchmarked against an information-parity baseline and a supervised oracle.</li>
-              <li className="pl-3 border-l border-border">Found MARL systematically underperforms the baseline across algorithm, reward, cost, and environment variations; ruled out five candidate explanations, isolating the bottleneck to RL sample efficiency rather than the surveillance signal. Manuscript in preparation, targeting Oct 2026.</li>
-            </ul>
+
+            <div className="group px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
+              <div className="flex items-start justify-between gap-4 mb-2">
+                <div>
+                  <p className="text-sm font-medium">Age-Mixing Structure in Aggregated Urban Mobility Data</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    <a href="https://doi.org/10.5281/zenodo.22152089" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-2">
+                      10.5281/zenodo.22152089
+                    </a>
+                  </p>
+                </div>
+                <span className="text-xs text-muted-foreground whitespace-nowrap">2026.08 &ndash; Present</span>
+              </div>
+              <ul className="space-y-1 text-sm text-muted-foreground">
+                <li className="pl-3 border-l border-border">Measured age-assortative mixing across 10.2 billion rows of Seoul&apos;s Living Migration release (79 months, 424 administrative dong, 16 age bands), pairing the near-zero reading with a synthetic-world calibration that fixes the instrument&apos;s detection limit.</li>
+                <li className="pl-3 border-l border-border">Found the co-arrival matrix within 0.00202 of proportionate mixing in every month &mdash; a factor of 33&ndash;35 below a national contact survey &mdash; while the pipeline recovers 92&ndash;101% of true assortativity on synthetic controls; verified by a mutation-tested citation audit, a determinism harness, and an independent re-implementation agreeing on 436/436 checks.</li>
+              </ul>
+            </div>
           </div>
         </section>
 
