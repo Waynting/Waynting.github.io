@@ -221,6 +221,11 @@ export default function Home() {
                 <div>
                   <p className="text-sm font-medium">Age-Mixing Structure in Aggregated Urban Mobility Data</p>
                   <p className="text-xs text-muted-foreground mt-0.5">
+                    Advised by{" "}
+                    <a href="https://sites.google.com/view/hsuanweilee/home" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-2">
+                      Wayne Lee
+                    </a>
+                    {" · "}
                     <a href="https://doi.org/10.5281/zenodo.22152089" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-2">
                       10.5281/zenodo.22152089
                     </a>
