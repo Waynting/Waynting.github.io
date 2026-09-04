@@ -274,6 +274,19 @@ export default function Home() {
           <div className="space-y-2">
             <div className="px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
               <div className="flex items-start justify-between gap-4 mb-2">
+                <div>
+                  <p className="text-sm font-medium">olcli — Overleaf CLI</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">Open-source contributor</p>
+                </div>
+                <div className="flex gap-3 text-xs text-muted-foreground whitespace-nowrap">
+                  <a href="https://github.com/aloth/olcli" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub →</a>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground">TypeScript, Node.js. Contributor to olcli, a CLI that pulls, pushes, and compiles Overleaf projects from the terminal (175+ stars, distributed via npm and Homebrew). Contributed <code className="text-xs">olcli diff</code>, a content-level diff of the local tree against the live remote project — 900+ lines with unit and e2e tests, refactoring shared file scanning into a reusable module — and a fix for a zip-slip path-traversal vulnerability in project archive extraction.</p>
+            </div>
+
+            <div className="px-4 py-4 -mx-4 hover:bg-muted/30 transition-colors rounded-sm">
+              <div className="flex items-start justify-between gap-4 mb-2">
                 <p className="text-sm font-medium">Spotify GuessSong</p>
                 <div className="flex gap-3 text-xs text-muted-foreground whitespace-nowrap">
                   <a href="https://github.com/Waynting/spotify-song-guess_web" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub →</a>
